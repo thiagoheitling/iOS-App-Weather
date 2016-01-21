@@ -10,7 +10,8 @@
 
 @implementation City
 
-- (instancetype)initWithName:(NSString *)name weatherDescription:(NSString *)weatherDescription currentTime:(NSString *)currentTime currentTemperature:(NSString *)currentTemperature andChanceOfPrecipitation:(NSString *)chanceOfPrecipitation {
+- (instancetype)initWithName:(NSString *)name weatherDescription:(NSString *)weatherDescription currentTime:(NSString *)currentTime currentTemperature:(NSString *)currentTemperature chanceOfPrecipitation:(NSString *)chanceOfPrecipitation andWeatherImage:(UIImage *)image {
+
     self = [super init];
     if (self) {
         
@@ -19,10 +20,11 @@
         _currentTemperature = currentTemperature;
         _currentTime = currentTime;
         _chanceOfPrecipitation = chanceOfPrecipitation;
+        _weatherImage = image;
+
     }
     return self;
     
 }
-
 
 @end

@@ -15,8 +15,8 @@
 @property(nonatomic, strong) NSString *currentTime;
 @property(nonatomic, strong) NSString *currentTemperature;
 @property(nonatomic, strong) NSString *chanceOfPrecipitation;
+@property(nonatomic, strong) UIImage *weatherImage;
 
-
-- (instancetype)initWithName:(NSString *)name weatherDescription:(NSString *)weatherDescription currentTime:(NSString *)currentTime currentTemperature:(NSString *)currentTemperature andChanceOfPrecipitation:(NSString *)chanceOfPrecipitation;
+- (instancetype)initWithName:(NSString *)name weatherDescription:(NSString *)weatherDescription currentTime:(NSString *)currentTime currentTemperature:(NSString *)currentTemperature chanceOfPrecipitation:(NSString *)chanceOfPrecipitation andWeatherImage:(UIImage *)image;
 
 @end

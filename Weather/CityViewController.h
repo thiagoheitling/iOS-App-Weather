@@ -7,11 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@class City;
+#import "City.h"
 
 @interface CityViewController : UIViewController
-
-@property (strong, nonatomic) City *city;
 
 - (instancetype)initWithCity:(City *)city;
 

@@ -7,7 +7,6 @@
 //
 
 #import "LHWAppDelegate.h"
-#import "City.h"
 #import "CityViewController.h"
 
 @implementation LHWAppDelegate
@@ -23,11 +22,11 @@
     UITabBarController *myTabBarController = [[UITabBarController alloc] init];    
     self.window.rootViewController = myTabBarController;
     
-    City *vancouver = [[City alloc]initWithName:@"Vancouver" weatherDescription:@"sunny" currentTime:@"11:02" currentTemperature:@"25 C" andChanceOfPrecipitation:@"30%"];
-    City *montreal = [[City alloc]initWithName:@"Montreal" weatherDescription:@"cloudy" currentTime:@"14:02" currentTemperature:@"-10 C" andChanceOfPrecipitation:@"10%"];
-    City *rioDeJaneiro = [[City alloc]initWithName:@"Rio de Janeiro" weatherDescription:@"sunny" currentTime:@"17:02" currentTemperature:@"40 C" andChanceOfPrecipitation:@"5%"];
-    City *dubai = [[City alloc]initWithName:@"Dubai" weatherDescription:@"Extremely sunny" currentTime:@"23:02" currentTemperature:@"45 C" andChanceOfPrecipitation:@"0%"];
-    City *berlim = [[City alloc]initWithName:@"Berlim" weatherDescription:@"fog" currentTime:@"19:02" currentTemperature:@"18 C" andChanceOfPrecipitation:@"60%"];
+    City *vancouver = [[City alloc]initWithName:@"Vancouver" weatherDescription:@"Lots of rain" currentTime:@"11:02" currentTemperature:@"25 C" chanceOfPrecipitation:@"30%" andWeatherImage: [UIImage imageNamed:@"rain.png"]];
+    City *montreal = [[City alloc]initWithName:@"Montreal" weatherDescription:@"Cloudy and windy" currentTime:@"14:02" currentTemperature:@"-10 C" chanceOfPrecipitation:@"10%" andWeatherImage:[UIImage imageNamed:@"wind.png"]];
+    City *rioDeJaneiro = [[City alloc]initWithName:@"Rio de Janeiro" weatherDescription:@"Cloudy" currentTime:@"17:02" currentTemperature:@"40 C" chanceOfPrecipitation:@"5%" andWeatherImage:[UIImage imageNamed:@"cloudy-night.png"]];
+    City *dubai = [[City alloc]initWithName:@"Dubai" weatherDescription:@"Cloudy" currentTime:@"23:02" currentTemperature:@"45 C" chanceOfPrecipitation:@"0%" andWeatherImage:[UIImage imageNamed:@"cloudy.png"]];
+    City *berlim = [[City alloc]initWithName:@"Berlim" weatherDescription:@"Patly foggy" currentTime:@"19:02" currentTemperature:@"18 C" chanceOfPrecipitation:@"60%" andWeatherImage:[UIImage imageNamed:@"fog.png"]];
     
     UINavigationController *vancouverNavController = [self createNavigationController:vancouver];
     UINavigationController *montrealNavController = [self createNavigationController:montreal];

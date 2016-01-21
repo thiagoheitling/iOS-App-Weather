@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CityViewController.h"
 
 @interface DetailedViewController : UIViewController
+
+@property (nonatomic) City *city;
 
 @end
